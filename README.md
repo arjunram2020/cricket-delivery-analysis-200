@@ -1,2 +1,9 @@
 # cricket-delivery-analysis-200
-Analyzed dataset of 200+ cricket deliveries from bowlers to predict ball speed and identify key influencing features; preprocessed the data and removed outlier points using matplotlib; implemented many sklearn regression models calculating RMSE and R^2 values; best model turned out to be RFR; biggest contributor (weight) turned out to be Arm Speed
+This repository analyzes a dataset of 200+ cricket deliveries from bowlers to predict ball speed and identify key influencing features. Below are the steps through which I performed the analysis:
+  Removed outlier points using matplotlib and Seaborn
+  Performed null analysis and preprocessing of data
+  Implemented many regression models including Ridge, Lasso, XGBRegressor, CatBoostRegressor, RandomForestRegressor, etc.
+  Used training split (80% train and 20% test). Also used GridSearchCV implemented through SkLearn which is a cross-validation method to be used towards testing data (20% of training)
+  Calculate RMSE and R^2 values (The best functioning model turned out to be RFR) 
+  Calculated coefficients of each weight through pandas,  contributor (weight) turned out to be Arm Speed
+  Everything is subject to change as more and more data gets added to our dataset so I will constantly update which models work better longterm as the dataset becomes bigger
